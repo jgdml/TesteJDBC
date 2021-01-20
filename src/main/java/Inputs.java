@@ -3,21 +3,17 @@ import java.util.Scanner;
 
 public class Inputs {
 
-    Scanner scan;
-    
-    Inputs(){
-        this.scan = new Scanner(System.in);
-    }
+    public static Scanner scan = new Scanner(System.in);
 
-    String getInput(String msg){
+    public static String getInput(String msg){
 
         System.out.println(msg);
-        return this.scan.nextLine();
+        return scan.nextLine();
     }
 
-    int getInputInt(String msg){
+    public static int getInputInt(String msg){
 
         System.out.println(msg);
-        return Integer.parseInt(this.scan.nextLine());
+        return Integer.parseInt(scan.nextLine());
     }
 }
